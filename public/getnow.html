@@ -20,34 +20,48 @@
         .shoechoice input[type="radio"]:checked + label {
             border: 3px solid #62A022;
         }
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 50px;
+            right: 30px;
+            z-index: 99;
+            font-size: 15px;
+            border: none;
+            outline: none;
+            background-color: #53762f;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+}
     </style>
   </head>
   <body id="anchor6">
     <a href="#anchor6" class="scrollLink"><button  id="myBtn" title="Go to top">Back to Top</button></a>
     <div class="container">
-        <header id="anchorb">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
+        <header class="" id="anchorb">
+            <nav class="navbar navbar-expand-lg " aria-label="Offcanvas navbar large">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">Crocs</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                    <a class="navbar-brand" href="index.html"><h1 class="text-3xl font-wave">Crocs</h1></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
+                    <div class="offcanvas offcanvas-top " tabindex="-1" id="offcanvasTop"aria-labelledby="offcanvasNavbar2Label">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="customization.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="getnow.html">Get Yours Now</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link  font-cursive font-semibold hover:text-[#FC9558]" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link font-cursive font-semibold hover:text-[#FC9558]" href="customization.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link font-cursive font-semibold hover:text-[#FC9558]" href="getnow.html">Get Yours Now!</a>
+                            </li>
                         </ul>
                     </div>
                     </div>
@@ -55,27 +69,26 @@
                 </nav>
         </header>
         <div class="my-20">
-            <p class="text-5xl text-center">Register to get your very first <span class="text-[#BAF280]">Free</span> pair of Crocs?</p>
+            <p class="text-5xl text-center font-cursive">Register to get your very first <span class="text-[#BAF280]">Free</span> pair of Crocs?</p>
         </div>
-
         <form action="https://api.web3forms.com/submit" name="gender" id="genderform" class="application" method="POST">
-            <div class="border-2">
-                 <h2 class="text-center  text-black text-3xl py-24">Please Select Your Gender</h2>
+            <div >
+                 <h2 class="text-center   text-3xl py-24 text-[#FCAA58] font-wave">Please Select Your Gender</h2>
             </div>
-            <div id="genderselection" class=" py-10 flex flex-col md:flex-row justify-center">
+            <div id="genderselection" class=" py-10 flex flex-col md:flex-row justify-center items-center">
                 <div id="boy">
                     <input type="radio" id="male" name="gender" onclick="teenboy()" value="male">
-                    <label for="male"><div class=" w-96 h-[400px] bg-center bg-[url('images/8fqzw8yxpkp11.jpg')] border-2 bg-cover"></div></label><br>
+                    <label for="male"><div class=" w-96 h-[400px] bg-center bg-[url('images/8fqzw8yxpkp11.jpg')]  bg-cover"></div></label><br>
                 </div>
                 <div id="girl">
                     <input type="radio" id="female" name="gender"  onclick="teengirl()" value="female">
-                    <label for="female"> <div class=" w-96 h-[400px]  bg-center bg-[url('images/4pSnuIpg_400x400.jpg')] border-2 bg-cover"></div></label><br>
+                    <label for="female"> <div class=" w-96 h-[400px]  bg-center bg-[url('images/4pSnuIpg_400x400.jpg')]  bg-cover"></div></label><br>
                 </div>
             </div>
             <!--------------------------------boy Form------------------------------------------------------------------>    
             <div class="hidden" id="formplaceboy">
-                <div class="border-2">
-                    <h2 class="text-center  text-black text-3xl py-14">Size?</h2>
+                <div >
+                    <h2 class="text-center  text-3xl py-14 text-[#FCAA58] font-wave">Size?</h2>
                 </div>
                 <div class="py-10">
                     <select class="form-select form-select-lg" aria-label="Default select example">
@@ -87,11 +100,11 @@
                         <option value="12-13.5">12-13.5</option>
                     </select>
                 </div>
-                <div class="shoechoice border-2"> 
+                <div class="shoechoice "> 
                     <div>
-                        <h2 class="text-center  text-black text-3xl py-14"> Select Your Shoe!!</h2>
+                        <h2 class="text-center   text-3xl py-14 text-[#FCAA58] font-wave"> Select Your Shoe!!</h2>
                     </div>
-                    <div class="mx-auto">
+                    <div class="mx-auto flex flex-wrap justify-center">
                         <input type="radio" name="image" id="image1" value="<img src='images/shoesforsalemen/small-shoe1.jpg'>">
                         <label for="image1">
                         <img src='images/shoesforsalemen/small-shoe1.jpg' alt="lime green croc">
@@ -114,30 +127,30 @@
                         </label>
                     </div>
                 </div>
-                <div id="submitform"  class="flex py-10 flex-col">
+                <div id="submitform" class="flex py-10 flex-col">
                     <div>
-                        <h2 class=" text-center  text-black text-3xl py-14" style="color: #FCAA58;">Get Your Order Today.</h2>
+                        <h2 class=" text-center  text-3xl py-14 text-[#FCAA58] font-cursive">Get Your Order Today!</h2>
                     </div>
-                    <div class="flex flex-col w-1/2 mx-auto">
+                    <div class="flex flex-col md:w-1/2 md:mx-auto">
                         <input type="hidden" name="access_key" placeholder="Your Full Name" value="c06bf84f-f5b7-49e3-9db5-70effe5ff5f7">
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Your Name</label>
-                            <input type="text" name="name" class="form-control contact-inputs" placeholder="Your Full Name"  required id="exampleInputPassword1">
+                            <input type="text" name="name" class="form-control  form-control-lg contact-inputs" placeholder="Your Full Name"  required id="exampleInputPassword1">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" name="email" class="form-control contact-inputs" id="exampleInputEmail1" placeholder="Your Email"  required aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">I will never share your email with anyone else.</div>
+                            <input type="email" name="email" class="form-control  form-control-lg contact-inputs" id="exampleInputEmail1" placeholder="Your Email"  required aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text font-cursive">I will never share your email with anyone else.</div>
                         </div>
                         <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                        <button type="submit" class="btn btn-outline-danger btn-lg">Submit <img src="images/arrow_icon.png" alt="" ></button>
+                        <button type="submit" class="btn border-[#BAF280] hover:bg-[#BAF280] btn-lg">Submit <img src="images/arrow_icon.png" alt="" ></button>
                     </div>
                 </div>
             </div>
             <!--------------------------------Girl Form------------------------------------------------------------------>      
             <div  class="hidden" id="formplacegirl">
-                <div class="border-2">
-                    <h2 class="text-center  text-black text-3xl py-14">Size?</h2>
+                <div >
+                    <h2 class="text-center  text-3xl py-14 text-[#FCAA58] font-wave">Size?</h2>
                 </div>
                 <div class="py-10">
                     <select class="form-select form-select-lg" aria-label="Default select example">
@@ -151,7 +164,7 @@
                 </div>
                 <div class="shoechoice">
                     <div>
-                        <h2 class="text-center  text-black text-3xl py-14"> Select Your Shoe!!</h2>
+                        <h2 class="text-center   text-3xl py-14 text-[#FCAA58] font-wave"> Select Your Shoe!!</h2>
                     </div>
                     <div class="flex justify-between flex-wrap">
                         <input type="radio" name="image" id="womanimage1" value="<img src='images/shoesforsalewomen/small-shoe1.jpg'>">
@@ -178,48 +191,43 @@
                 </div>
             <div id="submitform"  class="flex py-10 flex-col">
                 <div>
-                    <h2 class=" text-center  text-black text-3xl py-14" style="color: #FCAA58;">Get Your Order Today.</h2>
-                 
+                    <h2 class=" text-center text-3xl py-14 text-[#FCAA58] font-cursive" >Get Your Order Today!</h2>
                 </div>
-                <div class="flex flex-col w-1/2 mx-auto">
+                <div class="flex flex-col md:w-1/2 md:mx-auto">
                     <input type="hidden" name="access_key" placeholder="Your Full Name" value="c06bf84f-f5b7-49e3-9db5-70effe5ff5f7">
                     <div class="mb-3">
                         <label for="exampleInputPassword1" class="form-label">Your Name</label>
-                        <input type="text" name="name" class="form-control contact-inputs" placeholder="Your Full Name"  required id="exampleInputPassword1">
+                        <input type="text" name="name" class="form-control  form-control-lg contact-inputs" placeholder="Your Full Name"  required id="exampleInputPassword1">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" name="email" class="form-control contact-inputs" id="exampleInputEmail1" placeholder="Your Email"  required aria-describedby="emailHelp">
+                        <input type="email" name="email" class="form-control  form-control-lg contact-inputs" id="exampleInputEmail1" placeholder="Your Email"  required aria-describedby="emailHelp">
                         <div id="emailHelp" class="form-text">I will never share your email with anyone else.</div>
                     </div>
                     <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                    <button type="submit" class="btn btn-outline-danger btn-lg">Submit <img src="images/arrow_icon.png" alt="" ></button>
+                    <button type="submit" class="btn border-[#BAF280] hover:bg-[#BAF280] btn-lg">Submit <img src="images/arrow_icon.png" alt="" ></button>
                 </div>
             </div>
         </form>
   </div>
-    <div class="container-fluid bg-[#FCAA58]">
-        <footer class="  py-10">
-            <div class="container">
-                
-                <div class="flex justify-between flex-wrap">
-                    <div>
-                        <p>© 2024 Inc. All rights reserved</p>
-                        <h2 class="text-5xl">Crocs</h2>
-                    </div>
-                    <div class="flex">
-                        <img src="images/greencrocshoe.png" class="w-24">
-                        <img src="images/vector2 orange copy.svg" class="w-24" alt="orange vector croc">
-                    </div>
-                    <div >
-                        <img src="images/tiktokicon.png" class="w-12 inline-block" alt="">
-                        <img src="images/snapchaticon.png" class=" w-12 inline-block" alt="">
-                        <img src="images/instagramicon.png" class=" w-12 inline-block" alt="">
-                        <img src="images/facebookicon.png" class="w-12 inline-block" alt="">
-                    </div>
+  
+</div>
+<div class="container-fluid bg-[#FCAA58]">
+    <footer class="  py-10">
+        <div class="container">
+            <div class="flex justify-between flex-wrap">
+                <div>
+                    <h2 class="font-wave text-6xl text-[#BAF280]">Crocs</h2>
+                    <p>© 2024 Inc. All rights reserved</p>
                 </div>
-        </footer>
-    </div>
+               
+                <div class="flex">
+                    <img src="images/greencrocshoe.png" class="w-24">
+                    <img src="images/vector2 orange copy.svg" class="w-24" alt="orange vector croc">
+                </div>
+            </div>
+    </footer>
+</div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script>
             function teenboy() {
@@ -236,8 +244,6 @@
                 }
             }
         </script>
-
-        
         <script type="text/javascript">
         if (window.location.hash)
             scroll(0,0);

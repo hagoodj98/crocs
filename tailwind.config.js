@@ -2,7 +2,13 @@
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'wave': ['Knewave', 'serif'],
+        'cursive': ["Edu AU VIC WA NT Pre", 'cursive'],
+
+      }
+    },
   },
   plugins: [],
 }

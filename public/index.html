@@ -7,32 +7,48 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="js/jquery35.js"></script>
+        <style>
+                #myBtn {
+                    display: none;
+                    position: fixed;
+                    bottom: 50px;
+                    right: 30px;
+                    z-index: 99;
+                    font-size: 15px;
+                    border: none;
+                    outline: none;
+                    background-color: #53762f;
+                    color: white;
+                    cursor: pointer;
+                    padding: 15px;
+                    border-radius: 4px;
+}
+        </style>
     </head>
     <body id="anchor1">
         <a href="#anchor1" class="scrollLink"><button  id="myBtn" title="Go to top">Back to Top</button></a>
-        <header id="anchorb">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
+        <header class="container" id="anchorb">
+        <nav class="navbar navbar-expand-lg " aria-label="Offcanvas navbar large">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html">Crocs</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="index.html"><h1 class="text-3xl font-wave">Crocs</h1></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
+                <div class="offcanvas offcanvas-top " tabindex="-1" id="offcanvasTop"aria-labelledby="offcanvasNavbar2Label">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="customization.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="getnow.html">Get Yours Now</a>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link  font-cursive font-semibold hover:text-[#FC9558]" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-cursive font-semibold hover:text-[#FC9558]" href="customization.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link font-cursive font-semibold hover:text-[#FC9558]" href="getnow.html">Get Yours Now!</a>
+                        </li>
                     </ul>
                 </div>
                 </div>
@@ -43,11 +59,11 @@
         <div class="container">
             <div class="flex flex-col md:flex-row "> <!--class="getyours">-->
                 <div class="pt-32 px-14">
-                    <h1 class="text-5xl"> Get your <span id="pair">Pair</span> now!</h1> 
-                    <h3 class="my-4">Because you visit our site for the first time, you can get your free pair today.</h3>
-                    <a href="form.html" id="register"><button type="button" class="btn btn-outline-danger btn-lg">Register Now!</button></a>
+                    <h1 class="text-7xl font-cursive"> Get your <span class="text-[#BAF280]">Pair</span> now!</h1> 
+                    <p class="my-4 text-2xl md:text-3xl">Because you visit our site for the first time, you can get your free pair today.</p>
+                    <a href="getnow.html" id="register"><button type="button" class="btn border-[#FCAA58] hover:bg-[#FC9558] btn-lg">Register Now!</button></a>
                 </div>
-                <div class="w-72 ml-auto p-2 flex">
+                <div class="w-72 ml-auto md:mt-28 p-2 flex">
                     <img src="images/Group 25.svg" class="" alt="vector blue croc">
                 </div>
             </div>
@@ -55,76 +71,72 @@
                 <img src="images/vector.svg"  alt="">
             </div>
         </div>
-        <div class="flex flex-col p-4 gap-3 my-10 md:flex-row">
-            <div class="md:w-1/2">
-                <h2 class="py-3 text-3xl md:text-center">What are Crocs?</h2>
-            </div>
-            <div class="md:w-1/2">
-                <p>Crocs, Inc., is a Colorado maker of unique clogs that became extremely popular in the early 2000s with both men and women. Originally intended for use on boats and in other outdoor activities like hiking, fishing, and gardening, Crocs has also found a market with working people who spend a lot of time in their feet, such as health care and restaurant workers.</p>
-                <br>
-                <p>In some circles, essentially younger girls, these straps are traded among wearers to provide a different look. Because of their broad appeal, Crocs are available through numerous distribution channels: traditional footwear retailers, sporting goods and outdoor retailers, department stores, uniform suppliers, specialty food retailers, gift shops, health and beauty stores, and catalogs.</p>
-            </div>
-        </div>   
-        <div class="border-2 my-10  bg-cover bg-no-repeat bg-center bg-[url('images/large-ridge_crocs_zjuvru.jpg')] bg-fixed">
-            <h2 class="text-center bg-[#75AAF1] opacity-85 text-white text-6xl py-24"><a href="form.html">Get Yours Today</a></h2>
+        <div class="container-fluid bg-[#FCAA58]">
+            <div class=" container flex flex-col p-4 gap-3 mt-10 md:flex-row ">
+                <div class=" md:w-1/2">
+                    <img src="images/tum7nk4i42e41.jpg"  alt="">
+                </div>
+                <div class="md:w-1/2 flex flex-col justify-center">
+                    <div>
+                        <h2 class="py-3 text-3xl font-wave text-[#BAF280]">What are Crocs?</h2>
+                        <p>Crocs, Inc., is a Colorado maker of unique clogs that became extremely popular in the early 2000s with both men and women. Originally intended for use on boats and in other outdoor activities like hiking, fishing, and gardening, Crocs has also found a market with working people who spend a lot of time in their feet, such as health care and restaurant workers.</p>
+                        <br>
+                        <p>In some circles, essentially younger girls, these straps are traded among wearers to provide a different look. Because of their broad appeal, Crocs are available through numerous distribution channels: traditional footwear retailers, sporting goods and outdoor retailers, department stores, uniform suppliers, specialty food retailers, gift shops, health and beauty stores, and catalogs.</p>
+                    </div>
+                </div>
+            </div>   
         </div>
-
-        <div class="flex flex-col p-4 md:flex-row-reverse gap-3">
-            <div class="md:w-1/2 md:flex md:justify-center">
-                <h2 class="py-3 text-3xl border-2 mb-auto  ">Crocs History</h2>
+        <div class="border-2 mb-10  bg-cover bg-no-repeat bg-center bg-[url('images/large-ridge_crocs_zjuvru.jpg')] bg-fixed">
+           <h2 class="text-center  bg-[#75AAF1] font-cursive opacity-85 overline text-white text-4xl md:text-6xl py-36 md:p-44"> <a href="getnow.html" class="md:hover:text-7xl">Get Yours Today</a></h2>
+        </div>
+        <div class="container flex flex-col p-4 xl:flex-row-reverse gap-3">
+            <div>
+                <img src="images/71g-Lmspy2L._AC_UL1500_.jpg" alt="">
             </div>
             <div class="md:w-1/2">
+                <h2 class="py-3 text-3xl  mb-auto font-wave text-[#FCAA58]"> History and Branding</h2>
                 <p>Crocs was founded by Lyndon "Duke" Hanson, and George Boedecker Jr. to produce and distribute a foam clog, the design of which was acquired from a company called Foam Creations. The shoe was originally developed as a boating shoe. The first model produced by Crocs, the Beach, was unveiled in 2001 at the Fort Lauderdale Boat Show in Florida, and sold out the 200 pairs produced at that time. It has since sold 300 million pairs of shoes.</p>
-                <p>That is more than 900,000 crocs saved in waste. Furthermore, it only takes 1.6kwh of energy to make one pair of croc shoes. So, the phenomenal Crocs seem unstoppable as just before their tenth anniversary they had sold more than 200 million pairs in more than 90 countries, reaching sales revenues of $1 billion. Consequently, it seems the love and hate relationship of Crocs is here to stay as they continue expanding and developing their range of clogs, sandals, shoes and boots.</p>
+                <br>
+                <p>The Crocs™ brand stands for innovation, fun and comfort for people who want shoes that conform to their personalities and lifestyles, as well as to their feet. Now in more styles and in more places for more occasions than ever before, Crocs™ is taking a big step forward in providing intuitive comfort to feet everywhere.</p>
+                <br>
+                <p>The Crocs™ brand stands for innovation, fun and comfort for people who want shoes that conform to their personalities and lifestyles, as well as to their feet. Now in more styles and in more places for more occasions than ever before, Crocs™ is taking a big step forward in providing intuitive comfort to feet everywhere.</p>
             </div>   
         </div>
-
-        <div class="flex flex-col p-4 md:flex-row my-10 gap-3">
-            <div class=" md:flex md:justify-center md:items-center md:w-1/2">
-               <!--<img src="images/vector2 blue.svg" class="w-60" id="blueshoe" alt="">--> 
-                <h2 class="py-3 text-3xl">Brand History</h2>
-            </div>
-            <div class="md:w-1/2">
-                <p>The Crocs™ brand stands for innovation, fun and comfort for people who want shoes that conform to their personalities and lifestyles, as well as to their feet. Now in more styles and in more places for more occasions than ever before, Crocs™ is taking a big step forward in providing intuitive comfort to feet everywhere.</p>
-                <p>In its founding year, 2002, Crocs™ introduced an innovative shoe made of a revolutionary material called Croslite™. Croslite™ technology held unique characteristics that allowed it to perform on both land and in water, characteristics new to the footwear industry. The company was given the name Crocs™ after the multi-environment, amphibious nature of Crocodiles.</p>
-            </div>   
-        </div> 
-        <div class="flex flex-col p-4  md:flex-row-reverse gap-3">
+        <div class=" container flex flex-col p-4  md:flex-row-reverse gap-3">
             <div class="md:w-1/2 flex items-center">
-                <div class=" ">
-                    <h2 class="py-3 text-3xl border-2 mb-auto">Why Crocs?</h2>
-                    <p>"Crocs offer more protection for your feet than flip-flops," says Glickman. "Flip-flops don't provide a lot of arch support; they're open-toed so you can stub your toe and hurt yourself. Crocs offer more protection and comfort than that." Baravarian says Crocs have more positive attributes than negative, but they're no substitute for the real deal.Considered a therapeutic shoe, Crocs provide long-term relief from foot pain and is an ideal footwear alternative for people who have had foot surgery or people who have certain health conditions. Dr. Toole uses Crocs in her daily practice and advises her patients who have had foot surgery to wear them following surgery.</p>
+                <div >
+                    <h2 class="py-3 text-3xl  mb-auto font-wave text-[#FCAA58]">Why are they so Cool?</h2>
+                    <p>"Crocs offer more protection for your feet than flip-flops," says Glickman. "Flip-flops don't provide a lot of arch support; they're open-toed so you can stub your toe and hurt yourself. Crocs offer more protection and comfort than that." Baravarian says Crocs have more positive attributes than negative, but they're no substitute for the real deal.</p>
+                    <br>
+                    <p>Considered a therapeutic shoe, Crocs provide long-term relief from foot pain and is an ideal footwear alternative for people who have had foot surgery or people who have certain health conditions. Dr. Toole uses Crocs in her daily practice and advises her patients who have had foot surgery to wear them following surgery.</p>
                 </div>
             </div>
             <div class="md:w-1/2">
                 <img src="images/small-crocs-outdoor.jpg" alt="">
             </div>   
         </div>
+       
         <div class="container-fluid bg-[#FCAA58]">
             <footer class="  py-10">
                 <div class="container">
                     
                     <div class="flex justify-between flex-wrap">
                         <div>
+                            <h2 class="font-wave text-6xl text-[#BAF280]">Crocs</h2>
                             <p>© 2024 Inc. All rights reserved</p>
-                            <h2 class="text-5xl">Crocs</h2>
                         </div>
+                       
                         <div class="flex">
                             <img src="images/greencrocshoe.png" class="w-24">
                             <img src="images/vector2 orange copy.svg" class="w-24" alt="orange vector croc">
                         </div>
-                        <div >
-                            <img src="images/tiktokicon.png" class="w-12 inline-block" alt="">
-                            <img src="images/snapchaticon.png" class=" w-12 inline-block" alt="">
-                            <img src="images/instagramicon.png" class=" w-12 inline-block" alt="">
-                            <img src="images/facebookicon.png" class="w-12 inline-block" alt="">
-                        </div>
+                       
                     </div>
             </footer>
         </div>
 
 
-        </div>
+  
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script type="text/javascript">
         if (window.location.hash)
@@ -162,5 +174,25 @@
         });
         });
         </script>
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
     </body>
 </html>

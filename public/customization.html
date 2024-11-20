@@ -7,61 +7,87 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="js/jquery35.js"></script>
+    <style>
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 50px;
+            right: 30px;
+            z-index: 99;
+            font-size: 15px;
+            border: none;
+            outline: none;
+            background-color: #53762f;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+}
+    </style>
   </head>
   <body id="anchor5">
-    <a href="#anchor5" class="scrollLink"><button  id="myBtn" title="Go to top">Back to Top</button></a>
+    <a href="#anchor5" class="scrollLink hover:bg-black "><button  id="myBtn" title="Go to top">Back to Top</button></a>
     <div class="container">
         <header id="anchorb">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Offcanvas navbar large">
+            <nav class="navbar navbar-expand-lg " aria-label="Offcanvas navbar large">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="index.html">Crocs</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+                    <a class="navbar-brand" href="index.html"><h1 class="text-3xl font-wave">Crocs</h1></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
+                    <div class="offcanvas offcanvas-top " tabindex="-1" id="offcanvasTop"aria-labelledby="offcanvasNavbar2Label">
+                        <div class="offcanvas-header">
+                            <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="customization.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="getnow.html">Get Yours Now</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link  font-cursive font-semibold hover:text-[#FC9558]" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link font-cursive font-semibold hover:text-[#FC9558]" href="customization.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link font-cursive font-semibold hover:text-[#FC9558]" href="getnow.html">Get Yours Now!</a>
+                            </li>
                         </ul>
                     </div>
                     </div>
                 </div>
                 </nav>
         </header>
-        <div class="flex flex-col p-4  md:flex-row-reverse gap-3">
-            <div class="md:w-1/2 flex items-center">
+        <div class="flex flex-col p-4  lg:flex-row-reverse gap-3">
+            <div class="lg:w-1/2 flex gap-3 flex-col justify-center ">
                 <div class=" ">
-                    <h2 class="py-3 text-3xl border-2 mb-auto">Customization</h2>
+                    <h2 class="py-3 text-3xl  mb-auto text-[#FCAA58] font-wave">Customization</h2>
                     <p>Jibbitz™ charms are fun little images, letters, sayings, characters, and bits of pop culture mounted on a post to pop into the holes of your Crocs Classics. With 13 holes on each Crocs Classic, you can sport up to 26 at a time – or get creative with where you wear them! With a tight fit, your Jibbitz™ charms will stay put, allowing you to show off your hobbies, sense of humor or latest obsession on your feet as long as you’re kickin’ in your Classics.</p>
                 </div>
+                <div class="mt-29">
+                    <img src="images/small-crocs-(1).jpg" alt="">
+                </div>
             </div>
-            <div class="md:w-1/2 flex flex-col gap-3">
+            <div class="lg:w-1/2 flex flex-col gap-3">
                 <img src="images/large-f41af558a22059b33413ddaaaeadedea.jpg" alt="">
                 <p>Put your own personal touch on your very favorite pair of Crocs to make them even better! Your little ones can add Jibbitz of their favorite characters, from Finding Dory™ to Minnie Mouse™ and Minions™! Dads can add Jibbitz of their favorite sports, and Moms can add jewels! You can even add a flag from your favorite place around the world! And the best part is, these shoe charms are so easy to take on and off, you can switch your shoe charms everyday!  Looking for the perfect pair of shoes to put your new Jibbitz on?</p>
             </div>   
         </div>
-
-        <div class="flex flex-col p-4 gap-3 my-10 md:flex-row">
+    </div>
+    <div class="container-fluid bg-[#BAF280]">
+        <div class="container flex flex-col p-4 gap-3 my-10 md:flex-row">
             <div class="md:w-1/2">
-                <h2 class="py-3 text-3xl md:text-center">Kind of Material?</h2>
                 <img src="images/vector2 blue.svg" class="shoeunderwhatarecrocs" alt="blue vector croc">
             </div>
-            <div class="md:w-1/2">
-                <p>Crocs are made out of a foam resin called croslite, which is made out of a polymer called ethylene-vinyl acetate (EVA). Ethylene-vinyl acetate is a copolymer of ethylene and vinyl acetate. Vinyl acetate makes up anywhere from 10 to 40 percent of the copolymer, and the remainder is made up of the ethylene. This polymer is an elastomeric material (one that is elastic) in its flexibility and softness. Yet, it can be processed like a thermoplastic (a plastic that can be melted into a liquid). EVA is glossy, has a good stress-crack resistance, has a high resistance to UV radiation, and little or no odor to it.</p>
+            <div class="md:w-1/2 flex items-center">
+                <div>
+                    <h2 class="py-3 text-3xl text-[#FCAA58] font-wave">Kind of Material?</h2>
+                    <p>Crocs are made out of a foam resin called croslite, which is made out of a polymer called ethylene-vinyl acetate (EVA). Ethylene-vinyl acetate is a copolymer of ethylene and vinyl acetate. Vinyl acetate makes up anywhere from 10 to 40 percent of the copolymer, and the remainder is made up of the ethylene. </p>
+                    <br>
+                    <p>This polymer is an elastomeric material (one that is elastic) in its flexibility and softness. Yet, it can be processed like a thermoplastic (a plastic that can be melted into a liquid). EVA is glossy, has a good stress-crack resistance, has a high resistance to UV radiation, and little or no odor to it.</p>
+                </div>
             </div>
         </div> 
+    </div>
+    <div class="container">
         <div class=" h-[600px] bg-center bg-[url('images/line.jpg')] bg-cover "></div> 
         <div class="flex flex-col md:flex-row ">
             <div class=" md:w-1/2 h-96  bg-[url('images/large-crocs-clogs.jpg')] bg-center  bg-cover"></div>
@@ -77,51 +103,44 @@
             <div class=" md:w-1/2 h-[500px] bg-no-repeat bg-[url('images/large-XWjp1WcgIkI7DVfFrylg.jpg')]  border-2 bg-cover"></div>
             <div class=" md:w-1/2 h-[500px] bg-no-repeat bg-[url('images/large-201b8408-ca48-4b6c-8772-d7698ccffa39_rw_1920.jpg')]  border-2 bg-cover"></div>
         </div>
-
         <div class="flex flex-col  lg:flex-row my-10 gap-3">
             <div class=" md:flex md:justify-center md:items-center lg:w-1/2">
-                <div >
+                <div class="my-10">
                     <div>
-                        <h2 class="py-3 text-3xl border-2 mb-auto">Influenctial</h2>
+                        <h2 class="py-3 text-3xl  mb-auto text-[#FCAA58] font-wave">Influenctial</h2>
                         <p >Crocs are experiencing a teenage renaissance. The iconic brand's popularity has skyrocketed over the past year, according to Piper Jaffray's biannual survey of teen preferences. According to the report, released on Monday, Crocs now rank 13th out of all footwear brands in teen popularity. Coming in at No. 13 is a massive jump forward.</p>
                     </div>
                     <div>
-                        <h2 class="py-3 text-3xl border-2 mb-auto">Cost</h2>
+                        <h2 class="py-3 text-3xl  mb-auto text-[#FCAA58] font-wave">Cost</h2>
                         <p>You might be wondering how can an expensive shoe like this will save me money. Although they are costly, shoes from other brands with the almost same amount of money might last only six months or eight months. In the other hand, crocs shoe last for three or four years. That will save you a lot of money for buying shoes after ever four or five months.</p>
                     </div>
                 </div>
-                
             </div>
             <div class="lg:w-1/2 flex">
-                <div class="w-2/3 h-96 bg-no-repeat bg-[url('images/large-69170013-copy.jpg')] bg-center  border-2 bg-cover"></div>
-                <div class="w-2/3 h-96 bg-no-repeat bg-[url('images/haunted-mansion-crocs-disney.jpg')] bg-right  border-2 bg-cover"></div>
-                
+                <div class="w-2/3 h-96 bg-no-repeat bg-[url('images/large-69170013-copy.jpg')] bg-center  bg-cover"></div>
+                <div class="w-2/3 h-96 bg-no-repeat bg-[url('images/haunted-mansion-crocs-disney.jpg')] bg-right   bg-cover"></div>
             </div>   
         </div> 
-    
-        <div class="container-fluid bg-[#FCAA58]">
-            <footer class="  py-10">
-                <div class="container">
-                    
-                    <div class="flex justify-between flex-wrap">
-                        <div>
-                            <p>© 2024 Inc. All rights reserved</p>
-                            <h2 class="text-5xl">Crocs</h2>
-                        </div>
-                        <div class="flex">
-                            <img src="images/greencrocshoe.png" class="w-24">
-                            <img src="images/vector2 orange copy.svg" class="w-24" alt="orange vector croc">
-                        </div>
-                        <div >
-                            <img src="images/tiktokicon.png" class="w-12 inline-block" alt="">
-                            <img src="images/snapchaticon.png" class=" w-12 inline-block" alt="">
-                            <img src="images/instagramicon.png" class=" w-12 inline-block" alt="">
-                            <img src="images/facebookicon.png" class="w-12 inline-block" alt="">
-                        </div>
-                    </div>
-            </footer>
-        </div>
     </div>
+    <div class="container-fluid bg-[#FCAA58]">
+        <footer class="  py-10">
+            <div class="container">
+                
+                <div class="flex justify-between flex-wrap">
+                    <div>
+                        <h2 class="font-wave text-6xl text-[#BAF280]">Crocs</h2>
+                        <p>© 2024 Inc. All rights reserved</p>
+                    </div>
+                   
+                    <div class="flex">
+                        <img src="images/greencrocshoe.png" class="w-24">
+                        <img src="images/vector2 orange copy.svg" class="w-24" alt="orange vector croc">
+                    </div>
+                   
+                </div>
+        </footer>
+    </div>
+ 
     <script>
     if (window.location.hash)
         scroll(0,0);
@@ -183,7 +202,6 @@
           mybutton.style.display = "none";
         }
       }
-      
       // When the user clicks on the button, scroll to the top of the document
       function topFunction() {
         document.body.scrollTop = 0;

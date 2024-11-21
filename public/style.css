@@ -556,40 +556,6 @@ video {
   display: none;
 }
 
-.tw-container{
-  width: 100%;
-}
-
-@media (min-width: 640px){
-  .tw-container{
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px){
-  .tw-container{
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px){
-  .tw-container{
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px){
-  .tw-container{
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px){
-  .tw-container{
-    max-width: 1536px;
-  }
-}
-
 .tw-mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -862,7 +828,7 @@ video {
 }
 
 .tw-font-wave{
-  font-family: Modak, sans-serif;
+  font-family: Knewave, serif;
 }
 
 .tw-text-2xl{

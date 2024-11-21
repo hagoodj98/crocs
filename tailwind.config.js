@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        'wave': ['Modak', 'sans-serif'],
+        'wave': ["Knewave", 'serif'],
         'cursive': ["Edu AU VIC WA NT Pre", 'cursive'],
       }
     },

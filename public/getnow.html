@@ -38,7 +38,7 @@
                                 <a class="nav-link  tw-font-cursive tw-font-semibold hover:tw-text-[#FC9558]" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link tw-font-cursive tw-font-semibold hover:tw-text-[#FC9558]" href="customization.html">About</a>
+                                <a class="nav-link tw-font-cursive tw-font-semibold hover:tw-text-[#FC9558]" href="customization.html">Customs</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link tw-font-cursive tw-font-semibold hover:tw-text-[#FC9558]" href="getnow.html">Get Yours Now!</a>
@@ -52,7 +52,7 @@
             <div class="tw-mt-40">
                 <p class="tw-text-5xl tw-text-center tw-font-cursive">Register to get your very first <span class="tw-text-[#BAF280]">Free</span> pair of Crocs?</p>
             </div>
-            <form action="https://api.web3forms.com/submit" name="gender" id="genderform" class="application" method="POST">
+            
                 <div>
                     <h2 class="tw-text-center tw-text-3xl tw-py-24 tw-text-[#FCAA58] tw-font-wave">Please Select Your Gender</h2>
                 </div>
@@ -69,55 +69,83 @@
                 </div>
                 <!--------------------------------boy Form------------------------------------------------------------------>    
                 <div class="tw-hidden" id="formforboy">
-                    <div>
-                        <h2 class="tw-text-center tw-text-3xl tw-py-14 tw-text-[#FCAA58] tw-font-wave">Size?</h2>
-                    </div>
-                    <div class="tw-py-10">
-                        <select id="boyoption" class="form-select form-select-lg" aria-label="Default select example">
-                            <option selected>Choose Size:</option>
-                            <option value="4-5.5">4-5.5</option>
-                            <option value="6-7.5">6-7.5</option>
-                            <option value="8-9.5">8-9.5</option>
-                            <option value="10-11.5">10-11.5</option>
-                            <option value="12-13.5">12-13.5</option>
-                        </select>
-                    </div>
-                    <div class="shoechoice"> 
+                    <form action="https://api.web3forms.com/submit" name="gender" id="genderform" class="application" method="POST">
+                        <input type="hidden" name="access_key" value="c06bf84f-f5b7-49e3-9db5-70effe5ff5f7">
                         <div>
-                            <h2 class="tw-text-center tw-text-3xl tw-py-14 tw-text-[#FCAA58] tw-font-wave"> Select Your Shoe!!</h2>
+                            <h2 class="tw-text-center tw-text-3xl tw-py-14 tw-text-[#FCAA58] tw-font-wave">Size?</h2>
                         </div>
-                        <div class="tw-mx-auto tw-flex tw-flex-wrap tw-justify-center">
-                            <input type="radio" name="boyimage" id="image1" required value="<img src='images/shoesforsalemen/small-shoe1.jpg'>">
-                            <label for="image1">
-                            <img src='images/shoesforsalemen/small-shoe1.jpg'   alt="lime green croc">
-                            </label>
-                            <input type="radio" name="boyimage" id="image2" required value="<img src='images/shoesforsalemen/small-shoe2.jpg'>">
-                            <label for="image2">
-                            <img src='images/shoesforsalemen/small-shoe2.jpg' alt="black croc" >
-                            </label>
-                            <input type="radio" name="boyimage" id="image3" required value="<img src='images/shoesforsalemen/small-shoe3.jpg'>">
-                            <label for="image3">
-                            <img src='images/shoesforsalemen/small-shoe3.jpg' alt="grey croc" >
-                            </label>
-                            <input type="radio" name="boyimage" id="image4" required value="<img src='images/shoesforsalemen/small-shoe4.jpg'>">
-                            <label for="image4">
-                                <img src='images/shoesforsalemen/small-shoe4.jpg' alt="black and orange spotted croc" class="image">
-                            </label>
-                            <input type="radio" name="boyimage" id="image5" required value="<img src='images/shoesforsalemen/small-shoe5.jpg'>">
-                            <label for="image5">
-                                <img src='images/shoesforsalemen/small-shoe5-1.png' alt="orange croc" class="image">
-                            </label>
+                        <div class="tw-py-10">
+                            <select id="boyoption" class="form-select form-select-lg" >
+                                <option selected>Choose Size:</option>
+                                <option name="boysize" required value="4-5.5">4-5.5</option>
+                                <option name="boysize" required value="6-7.5">6-7.5</option>
+                                <option name="boysize" required value="8-9.5">8-9.5</option>
+                                <option name="boysize" required value="10-11.5">10-11.5</option>
+                                <option name="boysize" required value="12-13.5">12-13.5</option>
+                            </select>
                         </div>
-                    </div>
-                
+                        <div class="shoechoice"> 
+                            <div>
+                                <h2 class="tw-text-center tw-text-3xl tw-py-14 tw-text-[#FCAA58] tw-font-wave"> Select Your Shoe!!</h2>
+                            </div>
+                            <div class="tw-mx-auto tw-flex tw-flex-wrap tw-justify-center">
+                                <input type="radio" name="boyimage" id="image1" required value="<img src='images/shoesforsalemen/small-shoe1.jpg'>">
+                                <label for="image1">
+                                <img src='images/shoesforsalemen/small-shoe1.jpg'   alt="lime green croc">
+                                </label>
+                                <input type="radio" name="boyimage" id="image2" required value="<img src='images/shoesforsalemen/small-shoe2.jpg'>">
+                                <label for="image2">
+                                <img src='images/shoesforsalemen/small-shoe2.jpg' alt="black croc" >
+                                </label>
+                                <input type="radio" name="boyimage" id="image3" required value="<img src='images/shoesforsalemen/small-shoe3.jpg'>">
+                                <label for="image3">
+                                <img src='images/shoesforsalemen/small-shoe3.jpg' alt="grey croc" >
+                                </label>
+                                <input type="radio" name="boyimage" id="image4" required value="<img src='images/shoesforsalemen/small-shoe4.jpg'>">
+                                <label for="image4">
+                                    <img src='images/shoesforsalemen/small-shoe4.jpg' alt="black and orange spotted croc" class="image">
+                                </label>
+                                <input type="radio" name="boyimage" id="image5" required value="<img src='images/shoesforsalemen/small-shoe5.jpg'>">
+                                <label for="image5">
+                                    <img src='images/shoesforsalemen/small-shoe5-1.png' alt="orange croc" class="image">
+                                </label>
+                            </div>
+                        </div>
+                        <div id="boyform"  class="tw-flex tw-py-10 tw-flex-col">
+                            <div>
+                                <h2 class=" tw-text-center tw-text-3xl tw-py-14 tw-text-[#FCAA58] tw-font-cursive" >Get Your Order Today!</h2>
+                            </div>
+                            <div class="tw-flex tw-flex-col md:tw-w-1/2 md:tw-mx-auto">
+<!--///////-->            
+                              
+                                <div class="tw-mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Your Name</label>
+                                    <input type="text" name="name" class="form-control  form-control-lg contact-inputs" required placeholder="Your Full Name"   id="exampleInputPassword1">
+                                </div>
+                                <div class="tw-mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                    <input type="email" name="email" class="form-control  form-control-lg contact-inputs" id="exampleInputEmail1" placeholder="Your Email" required  aria-describedby="emailHelp">
+                                    <div id="emailHelp" class="form-text">I will never share your email with anyone else.</div>
+                                </div>
+                                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                                <button type="submit" id="boysubmit" class="btn submit tw-border-[#BAF280] hover:tw-bg-[#BAF280] btn-lg" disabled>Submit <img src="images/arrow_icon.png" alt=""></button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <!--------------------------------Girl Form------------------------------------------------------------------>      
                 <div class="tw-hidden" id="formforgirl">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+
+                       
+                        <input type="hidden" name="access_key" value="6370c233-bc6d-4368-9ec0-c84e73abf378">
+                     
+                
                     <div>
                         <h2 class="tw-text-center  tw-text-3xl tw-py-14 tw-text-[#FCAA58] tw-font-wave">Size?</h2>
                     </div>
                     <div class="tw-py-10">
-                        <select class="form-select form-select-lg" aria-label="Default select example">
+                        <select id="girloption" class="form-select form-select-lg" aria-label="Default select example">
                             <option selected>Choose Size:</option>
                             <option value="4-5.5">4-5.5</option>
                             <option value="6-7.5">6-7.5</option>
@@ -131,86 +159,99 @@
                             <h2 class="tw-text-center tw-text-3xl tw-py-14 tw-text-[#FCAA58] tw-font-wave"> Select Your Shoe!!</h2>
                         </div>
                         <div class="tw-flex tw-justify-between tw-flex-wrap">
-                            <input type="radio" name="image" id="womanimage1" value="<img src='images/shoesforsalewomen/small-shoe1.jpg'>">
+                            <input type="radio" name="girlimage" id="womanimage1" required value="<img src='images/shoesforsalewomen/small-shoe1.jpg'>">
                             <label for="womanimage1">
-                            <img src='images/shoesforsalewomen/small-shoe1.jpg' alt="croc with mermaid tail" class="image">
+                            <img src='images/shoesforsalewomen/small-shoe1.jpg' required alt="croc with mermaid tail" class="image">
                             </label>
-                            <input type="radio" name="image" id="womanimage2" value="<img src='images/shoesforsalewomen/small-shoe2.jpg'>">
+                            <input type="radio" name="girlimage" id="womanimage2" required value="<img src='images/shoesforsalewomen/small-shoe2.jpg'>">
                             <label for="womanimage2">
                             <img src='images/shoesforsalewomen/small-shoe2.jpg' alt="rainbow croc" class="image">
                             </label>
-                            <input type="radio" name="image" id="womanimage3" value="<img src='images/shoesforsalewomen/small-shoe3.jpg'>">
+                            <input type="radio" name="girlimage" id="womanimage3" required value="<img src='images/shoesforsalewomen/small-shoe3.jpg'>">
                             <label for="womanimage3">
-                            <img src='images/shoesforsalewomen/small-shoe3.jpg' alt="pink croc" class="image">
+                            <img src='images/shoesforsalewomen/small-shoe3.jpg' required alt="pink croc" class="image">
                             </label>
-                            <input type="radio" name="image" id="womanimage4" value="<img src='images/shoesforsalewomen/small-shoe4.jpg'>">
+                            <input type="radio" name="girlimage" id="womanimage4" required value="<img src='images/shoesforsalewomen/small-shoe4.jpg'>">
                             <label for="womanimage4">
-                            <img src='images/shoesforsalewomen/small-shoe4.jpg' alt="green croc with stars" class="image">
+                            <img src='images/shoesforsalewomen/small-shoe4.jpg' required alt="green croc with stars" class="image">
                             </label>
-                            <input type="radio" name="image" id="womanimage5" value="<img src='images/shoesforsalewomen/small-shoe5.jpg'>">
+                            <input type="radio" name="girlimage" id="womanimage5" required value="<img src='images/shoesforsalewomen/small-shoe5.jpg'>">
                             <label for="womanimage5">
-                            <img src='images/shoesforsalewomen/small-shoe5.jpg' alt="glitter purple croc" class="image">
+                            <img src='images/shoesforsalewomen/small-shoe5.jpg' required alt="glitter purple croc" class="image">
                             </label>
                         </div>
                     </div>
-                </div>
-                <div id="submitform"  class="tw-flex tw-py-10 tw-flex-col">
-                    <div>
-                        <h2 class=" tw-text-center tw-text-3xl tw-py-14 tw-text-[#FCAA58] tw-font-cursive" >Get Your Order Today!</h2>
-                    </div>
-                    <div class="tw-flex tw-flex-col md:tw-w-1/2 md:tw-mx-auto">
-    <!--//////////////////////////////-->
-                        <input type="hidden" name="access_key" value="c06bf84f-f5b7-49e3-9db5-70effe5ff5f7">
-                        <div class="tw-mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Your Name</label>
-                            <input type="text" name="name" class="form-control  form-control-lg contact-inputs" required placeholder="Your Full Name"   id="exampleInputPassword1">
+                    <div id="girlform"  class="tw-flex tw-py-10 tw-flex-col">
+                        <div>
+                            <h2 class=" tw-text-center tw-text-3xl tw-py-14 tw-text-[#FCAA58] tw-font-cursive" >Get Your Order Today!</h2>
                         </div>
-                        <div class="tw-mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" name="email" class="form-control  form-control-lg contact-inputs" id="exampleInputEmail1" placeholder="Your Email" required  aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">I will never share your email with anyone else.</div>
+                        <div class="tw-flex tw-flex-col md:tw-w-1/2 md:tw-mx-auto">
+<!--///////-->            
+                          
+                            <div class="tw-mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Your Name</label>
+                                <input type="text" name="name" class="form-control  form-control-lg contact-inputs" required placeholder="Your Full Name"   id="exampleInputPassword1">
+                            </div>
+                            <div class="tw-mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" name="email" class="form-control  form-control-lg contact-inputs" id="exampleInputEmail1" placeholder="Your Email" required  aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">I will never share your email with anyone else.</div>
+                            </div>
+                            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                            <button type="submit" id="girlsubmit" class="btn tw-border-[#BAF280] submit hover:tw-bg-[#BAF280] btn-lg" disabled>Submit <img src="images/arrow_icon.png" alt=""></button>
                         </div>
-                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
-                        <button type="submit" id="submit" class="btn tw-border-[#BAF280] hover:tw-bg-[#BAF280] btn-lg" disabled>Submit <img src="images/arrow_icon.png" alt=""></button>
                     </div>
+                </form>
                 </div>
-            </form>
         </div>
-        <div class="container-fluid tw-bg-[#FCAA58]">
-            <footer class="tw-py-10">
-                <div class="container">
-                    
+        <div class="container-fluid ">
+            <footer class="tw-py-10 container">
+                <hr>
+                <br>
+                <div>
                     <div class="tw-flex tw-justify-between tw-flex-wrap">
                         <div>
-                            <h2 class="tw-font-wave tw-text-6xl tw-text-[#BAF280]">Crocs</h2>
+                            <h2 class="tw-font-wave tw-text-4xl tw-text-[#BAF280]">Crocs</h2>
                             <p>© 2024 Inc. All rights reserved</p>
                         </div>
+                       
                         <div class="tw-flex">
                             <img src="images/greencrocshoe.png" class="tw-w-24">
                             <img src="images/vector2 orange copy.svg" class="tw-w-24" alt="orange vector croc">
                         </div>
+                       
                     </div>
             </footer>
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         <script>
+            let girlform = document.getElementById("girlsubmit");
+            
             function teenboy() {
                 if (document.getElementById('male').checked) {
                     document.getElementById('formforboy').style.display = "block";
                     document.getElementById('formforgirl').style.display = "none";
+                    girlform.setAttribute('disabled', 'disabled');
+                }
+                else{
+                    girlform.removeAttribute('disabled');
                 }
             }
-
             function teengirl() {
                 if (document.getElementById('female').checked) {
                     document.getElementById('formforgirl').style.display = "block";
                     document.getElementById('formforboy').style.display = "none";
+                    boysubmit.setAttribute('disabled', 'disabled');
+                }
+                else{
+                    boysubmit.removeAttribute('disabled');
                 }
             }
             const selectElement = document.getElementById("boyoption"); 
+            const selectGirlElement = document.getElementById("girloption"); 
           
-            const submit = document.getElementById("submit");
+            const submit = document.getElementById("boysubmit");
 
             selectElement.addEventListener("change", function() { 
                 
@@ -224,6 +265,21 @@
                 submit.removeAttribute('disabled');
             }
         }); 
+
+        const girlsubmit = document.getElementById("girlsubmit");
+
+        selectGirlElement.addEventListener("change", function() { 
+                
+                const selectedValue = this.value; 
+                console.log("Selected value:", selectedValue); 
+                
+                if(selectedValue === 'Choose Size:'){
+                    girlsubmit.setAttribute('disabled', 'disabled');
+                }
+                else{
+                    girlsubmit.removeAttribute('disabled');
+                }
+            }); 
        
         
         </script>
